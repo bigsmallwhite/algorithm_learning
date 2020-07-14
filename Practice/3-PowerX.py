@@ -9,10 +9,13 @@
 '''
 
 # here put the import lib
-# 递归计算幂方，二分优化，2^6 = 2^3*2^3,故可以二分求幂
+# 思路一：
+    # 递归计算幂方，二分优化，2^6 = 2^3*2^3,故可以二分求幂
+# 思路二：
+    # 位运算，把n转成二进制，如n=9，——>1001，求m的9次方，
+    # 即m^9 = m^1000 * m^0001
 
-
-def powerX(x, n):
+def powerX1(x, n):
     if n == 0:
         return 1
     else:
@@ -23,4 +26,4 @@ def powerX(x, n):
         return result
 
 
-print(powerX(2, 5))
+print(powerX1(2, 5))
