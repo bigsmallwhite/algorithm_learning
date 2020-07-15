@@ -1,4 +1,4 @@
-## 练习实例
+## 练习实例![](https://img.shields.io/badge/Python-3.8-green)
 
 1、二分法
 
