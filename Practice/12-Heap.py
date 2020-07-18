@@ -12,3 +12,6 @@
 
 class bsHeap(object):
     pass
+
+    def my_fun(self):
+        psas
