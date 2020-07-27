@@ -5,7 +5,7 @@
 @Time    :   2020/07/12 00:36:04
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   实现队列
 '''
 
 # here put the import lib

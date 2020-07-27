@@ -5,7 +5,7 @@
 @Time    :   2020/07/12 12:25:35
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   实现双端队列
 '''
 
 # here put the import lib

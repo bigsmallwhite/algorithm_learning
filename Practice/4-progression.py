@@ -5,7 +5,7 @@
 @Time    :   2020/06/27 23:43:13
 @Author  :   Dll
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   类的继承
 '''
 
 # here put the import lib

@@ -5,7 +5,7 @@
 @Time    :   2020/07/02 22:34:37
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   首尾翻转列表
 '''
 
 # here put the import lib

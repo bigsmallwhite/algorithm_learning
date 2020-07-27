@@ -5,7 +5,7 @@
 @Time    :   2020/06/30 00:13:40
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   二分查找
 '''
 # here put the import lib
 

@@ -5,7 +5,7 @@
 @Time    :   2020/07/02 23:48:21
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   优化m的n次方
 '''
 
 # here put the import lib

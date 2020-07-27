@@ -5,7 +5,7 @@
 @Time    :   2020/07/01 21:39:47
 @Author  :   Dll
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   实现双向列表
 '''
 # here put the import lib
 import SingleLink

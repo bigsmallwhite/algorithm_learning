@@ -5,7 +5,7 @@
 @Time    :   2020/07/01 00:35:01
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   递归遍历磁盘空间和目录
 '''
 
 # here put the import lib

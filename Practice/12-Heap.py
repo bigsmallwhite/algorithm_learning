@@ -11,7 +11,9 @@
 # here put the import lib
 
 class bsHeap(object):
-    pass
-
+    """
+    大顶堆、小顶堆
+    """
+    
     def my_fun(self):
-        psas
+        pass

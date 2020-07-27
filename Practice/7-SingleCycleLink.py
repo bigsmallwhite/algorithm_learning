@@ -5,7 +5,7 @@
 @Time    :   2020/07/05 01:19:08
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   实现循环列表
 '''
 
 # here put the import lib
