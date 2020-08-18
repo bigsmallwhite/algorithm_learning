@@ -65,7 +65,7 @@ def allsubsets3(lst):
         tmp = []
         # 遍历每位是否为1
         for j in range(len(lst)):
-            if i >> j & 1 == 0:
+            if i >> j & 1 == 1:
                 tmp.append(lst[j])
         result.append(tmp)
     print(len(result))
