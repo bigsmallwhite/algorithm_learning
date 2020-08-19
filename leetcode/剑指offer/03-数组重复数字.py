@@ -5,7 +5,7 @@
 @Time    :   2020/08/12 10:12:51
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   找出数组中重复的数字
 '''
 
 # here put the import lib
