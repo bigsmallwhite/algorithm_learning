@@ -38,8 +38,7 @@
 思路二：递归，实际上对思路一的优化，思路一中存在大量重复的计算，按理说只需要从下往上计算一次就应该可以判断出来，
 所以我们直接递归计算每一层左右子树的高度，遇到差值大于1的，退出递归。
 
-思路三：递归，思路二毕竟return的是高度，需要设置一个全局控制变量，而且不能退出递归，必须完全递归树的全部层，这样就导致跟多的执行时间，
-所以我们希望能在递归的同时判断高度差，直接返回True or False。
+思路三：递归，思路二毕竟return的是高度，需要设置一个全局控制变量，所以我们希望能在递归的同时判断高度差，直接返回True or False。
 这里我们返回的信息应该是既包含子树的深度的int类型的值，又包含子树是否是平衡二叉树的bool类型的值
 '''
 
@@ -48,6 +47,12 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
+
+# 定义返回的结果类，包括树的深度和子树是否平衡的bool值
+class Result:
+    def __init__(self, detpth, isb):
+        self.detpth = detpth
+        self.isb = isb
 
 class Solution:
     
@@ -92,6 +97,19 @@ class Solution:
         return max(left, right) + 1
 
 # 方法三：
+    def isBalanced(self, root):
+        return self.isBalanced3(root).isb
+
+    def isBalanced3(self, node):
+        if node is None:
+            return Result(0, True)
+        left = self.isBalanced3(node.left)
+        right = self.isBalanced3(node.right)
+        if left.isb is False or right.isb is False:
+            return Result(0, False)
+        if abs(left.detpth - right.detpth) > 1:
+            return Result(0, False)
+        return Result(max(left.detpth, right.detpth)+1, True)
 
 
 
