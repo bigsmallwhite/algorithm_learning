@@ -8,9 +8,9 @@ git add .
 
 msg="$1 `date +%Y-%m-%d`"
 
-# if [ $# -eq 1 ]
-#  then msg="$1"
-#fi
+if [ $# -eq 1 ]
+  then msg="修改部分代码 `date +%Y-%m-%d`"
+fi
 
 git commit -m "$msg"
 

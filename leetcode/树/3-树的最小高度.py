@@ -5,7 +5,7 @@
 @Time    :   2020/08/19 22:06:37
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   求二叉树的最小高度
 '''
 
 # here put the import lib
