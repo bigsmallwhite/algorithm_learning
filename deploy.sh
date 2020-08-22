@@ -12,7 +12,7 @@ if [ $# -eq 1 ]
   then msg="修改部分代码 `date +%Y-%m-%d`"
 fi
 
-git commit -m "$msg"
+git commit -m"$msg"
 
 # push source to github
 git push 
