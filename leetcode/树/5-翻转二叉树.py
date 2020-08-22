@@ -5,7 +5,7 @@
 @Time    :   2020/08/21 22:14:41
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   翻转二叉树
+@Desc    :   翻转二叉树的所有节点
 '''
 
 # here put the import lib
