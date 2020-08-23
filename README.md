@@ -1,6 +1,6 @@
 ## algorithm_learning![](https://img.shields.io/badge/Python-3.8-green)![](https://img.shields.io/badge/leetcode-yellow)![](https://img.shields.io/badge/剑指offer-red)
 
-> 个人的一些关于数据结构与算法的学习记录，都是基于Python实现的，还有一些关于leetcode的解题总结。
+> 个人的一些关于数据结构与算法的学习记录，都是基于Python实现的，还有一些关于leetcode的解题总结，部分内容同步到个人[博客小站](https://dllyy.xyz/)，欢迎捧场~
 >
 > 每道题尽量总结多种解题思路（题目 --方法总结），熟能生巧……
 
@@ -22,6 +22,7 @@
 - [x] 3、树的最小高度                   --递归、BFS
 - [x] 4、对称二叉树的判断            --递归、BFS
 - [x] 5、翻转二叉树                      --递归（前序遍历、中序遍历、后序遍历）、迭代
+- [x] 6、合并二叉树                      --递归，迭代（层次遍历）
 
 
 #### 数学
