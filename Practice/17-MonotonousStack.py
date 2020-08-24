@@ -61,6 +61,7 @@ class Solution:
             if stack:
                 res[i] = nums[stack[-1]]
             stack.append(i)
+        return res
     
     # 单调递减栈：查找上一个小元素
     def preSmallerElement(self, nums):
@@ -73,6 +74,7 @@ class Solution:
             if stack:
                 res[i] = nums[stack[-1]]
             stack.append(i)
+        return res
 
 
 if __name__ == '__main__':
