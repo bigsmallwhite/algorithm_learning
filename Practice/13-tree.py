@@ -5,7 +5,7 @@
 @Time    :   2020/07/20 18:59:47
 @Author  :   Dll 
 @Contact :   dengll1783600@foxmail.com
-@Desc    :   None
+@Desc    :   实现树结构（二叉树）
 '''
 
 # here put the import lib
@@ -45,7 +45,7 @@ class Tree(object):
                 queue.append(cur_node.rchild)
 
     def bread_travel(self):
-        """广度优先遍历"""
+        """广度优先遍历/层次遍历"""
         queue = [self.root]
         while queue:
             cur_node = queue.pop(0)
@@ -74,6 +74,19 @@ class Tree(object):
         print(node.element, end='  ')
         self.pre_deep_travel(node.lchild)
         self.pre_deep_travel(node.rchild)
+    
+    # 先序遍历非递归
+    def pre_deep_travel1(self, node):
+        if node is None:
+            return 
+        stack = [node]
+        while stack:
+            node = stack.pop()
+            print(node.element, end= '  ')
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
         
     def in_deep_travel(self, node):
         """中序遍历"""
@@ -82,7 +95,21 @@ class Tree(object):
         self.in_deep_travel(node.lchild)
         print(node.element, end='  ')
         self.in_deep_travel(node.rchild)
-
+    
+    # 中序遍历非递归
+    def in_deep_travel1(self, node):
+        stack = []
+        while node is not None or len(stack) != 0:
+            # 先添加所有左节点
+            while node is not None:
+                stack.append(node)
+                node = node.left
+            if stack:
+                node = stack.pop()
+                print(node.element, end='  ')
+                # 再添加右节点
+                node = node.right
+        
     def post_deep_travel(self, node):
         """后序遍历"""
         if node is None:
@@ -91,6 +118,25 @@ class Tree(object):
         self.post_deep_travel(node.rchild)
         print(node.element, end='  ')
 
+    # 后序遍历非递归，双栈法
+    def post_deep_travel1(self, node):
+        if node is None:
+            return
+        stack1 = [node]
+        stack2 = []
+        while stack1:
+            node = stack1.pop()
+            stack2.append(node)
+            if node.left:
+                stack1.append(node.left)
+            if node.right:
+                stack1.append(node.right)
+        while stack2:
+            node = stack2.pop()
+            print(node.element, end='  ')
+
+        
+        
 if __name__ == '__main__':
     t = Tree()
     for i in range(15):
