@@ -99,7 +99,7 @@ class Tree(object):
     # 中序遍历非递归
     def in_deep_travel1(self, node):
         stack = []
-        while node is not None or len(stack) != 0:
+        while node or stack:
             # 先添加所有左节点
             while node is not None:
                 stack.append(node)
