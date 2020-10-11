@@ -91,6 +91,7 @@
 - [x] 15、汉诺塔问题
 - [x] 16、实现python range
 - [x] 17、实现单调栈
+- [x] 18、绕圈圈打印整数
 
 ## sorting_algorithm
 
