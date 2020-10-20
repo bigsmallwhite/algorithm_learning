@@ -14,14 +14,12 @@
 a = 'abcd'
 b = 'abdc'
 最大的公共子串：'ab'
+思路一：
+思路二：滑动窗口，
 '''
 
-# 暴力解决
-def solution1(str1, str2):
-    n1 = len(str1)
-    n2 = len(str2)
-    n = min(n1, n2)
-    for i in range(n, 0, -1):
+
+
         
 
 if __name__ == '__main__':
